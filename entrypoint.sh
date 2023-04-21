@@ -1,5 +1,5 @@
 #!/bin/bash
-#testing
+
 set -o pipefail
 
 # config
