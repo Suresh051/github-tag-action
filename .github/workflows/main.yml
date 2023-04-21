@@ -38,7 +38,7 @@ jobs:
 
       - name: version-tag-major
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           git fetch --tags
           tagFmt="^v?[0-9]+\.[0-9]+\.[0-9]+$"
